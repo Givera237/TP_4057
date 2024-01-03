@@ -7,6 +7,7 @@ const routes: Routes =
     {path : '', component : AccueilComponent},
     {path: 'perdu',  loadChildren: () => import('./perdu/perdu.module').then(m => m.PerduModule) },
     {path: 'trouve',  loadChildren: () => import('./trouve/trouve.module').then(m => m.TrouveModule) },
+    {path: 'recherche',  loadChildren: () => import('./recherche/recherche.module').then(m => m.RechercheModule) },
 
 
   ];
