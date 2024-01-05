@@ -5,7 +5,7 @@ import { PerduFormComponent } from "./components/perdu-form/perdu-form.component
 
 const routes : Routes =
 [
-    {path : 'form', component : PerduFormComponent},
+    {path : 'form/:id', component : PerduFormComponent},
 ]
 
 @NgModule

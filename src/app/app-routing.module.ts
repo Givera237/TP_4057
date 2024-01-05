@@ -8,6 +8,7 @@ const routes: Routes =
     {path: 'perdu',  loadChildren: () => import('./perdu/perdu.module').then(m => m.PerduModule) },
     {path: 'trouve',  loadChildren: () => import('./trouve/trouve.module').then(m => m.TrouveModule) },
     {path: 'recherche',  loadChildren: () => import('./recherche/recherche.module').then(m => m.RechercheModule) },
+    {path: 'authentification',  loadChildren: () => import('./authentification/authentification.module').then(m => m.AuthentificationModule) },
 
 
   ];

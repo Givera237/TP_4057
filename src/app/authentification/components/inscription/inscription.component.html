@@ -1,0 +1,29 @@
+<div class="fond" style="margin-top: 80px;">
+    <div class="container ">
+        <div class="col-4 col-sm-6 col-md-5 offset-0 offset-md-3 p-4 d-flex justify-content-center">
+             <form [formGroup]="inscriptionForm" class="row g-3 cont">
+                <label for="pseudo" class="for-label"> <h4 class="fw-bold text-center text-white text-uppercase">INSCRIPTION</h4> </label><br>
+                <span>pseudo <em>*</em></span> <span style="color: white;">  </span>
+                <input type="text" class="form-control mt-1 mb-3 p-1" formControlName="pseudo" id="pseudo" placeholder="Votre Pseudo ">
+                <span>email <em>*</em></span>
+                <input type="email" class="form-control mt-1 mb-3 p-1" formControlName="email" id="email" placeholder="Votre Email ">
+
+                <span>telephone <em>*</em></span>
+                <input type="tel" class="form-control mt-1 mb-3 p-1" formControlName="telephone" id="telephone" placeholder="Votre Numéro de téléphone ">
+                <span>Mot de passe <em>*</em></span>
+                <input type="mot_de_passe" class="form-control mt-1 mb-3 p-1" formControlName="mot_de_passe" id="mot_de_passe" placeholder="Votre Mot de passe ">
+
+                <div class="col-6 offset-3 offset-sm-1 offset-md-2 d-flex justify-content-center">
+                    <button type="submit" (click)="onSubmit()" [disabled]="inscriptionForm.invalid" class="btn btn-primary mt-3 mb-3 text-black btn_connexion"><STRong>Inscription </STRong></button>
+                </div>
+                <div class="text-md-end">
+                    <span class="text-white text-start text-end">
+                        Déjà un compte, <a href="authentification/connexion " class="text-black">Se connecter</a> 
+                    </span>
+                </div>
+             </form>
+         </div>
+        
+    </div>
+</div>
+
