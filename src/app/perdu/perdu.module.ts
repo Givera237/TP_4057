@@ -4,12 +4,14 @@ import { PerduFormComponent } from './components/perdu-form/perdu-form.component
 import { PerduRoutingModule } from './perdu-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ListeObjetPerduComponent } from './components/liste-objet-perdu/liste-objet-perdu.component';
 
 
 
 @NgModule({
   declarations: [
-    PerduFormComponent
+    PerduFormComponent,
+    ListeObjetPerduComponent
   ],
   imports: [
     CommonModule,

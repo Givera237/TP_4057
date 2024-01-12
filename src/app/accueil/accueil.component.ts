@@ -28,6 +28,6 @@ export class AccueilComponent
   onViewFormation( ) : void
     {
       
-        this.router.navigateByUrl(`perdu/form/${this.id_utilisateur}`); 
+        this.router.navigateByUrl(`perdu/form`); 
     }
 }
